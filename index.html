@@ -11,11 +11,18 @@
         <h1>YouTube Playlist Analyzer</h1>
         <p>Enter the YouTube playlist URL:</p>
         <input type="text" id="playlistUrl" placeholder="e.g., https://www.youtube.com/playlist?list=YOUR_PLAYLIST_ID">
-        <button onclick="analyzePlaylist()">Analyze</button>
+        <button onclick="analyzePlaylist()" id="analyzeButton">Analyze</button>
         <div id="result">
-            <p>Playlist Name: <span class='playlist-name' id="playlistName"></span></p>
-            <p>Total Time: <span class='total-time' id="totalTime"></span></p>
-        </div>
+            <p class="font-bold">Playlist Name: <span id="playlistName"></span></p>
+            <p>Number of Videos: <span id="numVideos"></span></p>
+            <p>Average Length of Video: <span id="avgVideoLength"></span></p>
+            <p>Total Time: <span id="totalTime"></span></p>
+            <p>At 1.25x: <span id="time125x"></span></p>
+            <p>At 1.50x: <span id="time150x"></span></p>
+            <p>At 1.75x: <span id="time175x"></span></p>
+            <p>At 2.00x: <span id="time200x"></span></p>
+          </div>
+          
     </div>
     <script src="script.js"></script>
 </body>
