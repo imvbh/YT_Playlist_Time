@@ -177,7 +177,7 @@ button:hover {
   background-color: #a3e583; /* Button background color on hover */
 }
 
-#result1 {
+.result1 {
     margin-top: 1rem;
   padding: 1rem 2rem;
   padding-bottom: 0.5rem;
@@ -189,7 +189,7 @@ button:hover {
     color:#7b7b7b
 }
 
-#result1 p {
+.result1 p {
   font-weight: 700;
   color: #7d7d7d;
   margin-bottom: 1rem;
