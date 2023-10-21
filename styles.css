@@ -180,7 +180,7 @@ button {
 
 
 #result1{
-  margin bottom: 3rem;
+  margin bottom: 1rem;
   display:none; /*Initially hide the result section */
 }
 
@@ -218,4 +218,5 @@ span {
 
 footer{
 background-color:#1e1e1e;
+height:3rem;
 }
