@@ -222,16 +222,25 @@ margin:1rem;
 
 footer a {
 text-decorations: none;
+color: aqua
 }
 
 /* unvisited link */
 footer a:link {
-  color: white;
+  color: red;
 }
-
-
 
 /* visited link */
 footer a:visited {
-  color: aqua;
+  color: green;
+}
+
+/* mouse over link */
+footer a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+footer a:active {
+  color: yellow;
 }
