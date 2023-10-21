@@ -1,35 +1,56 @@
+
+
 body {
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-    background-color: #121212; /* Dark background color */
-    color: white; /* Text color */
-    margin: 0;
-    padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: auto;
+  align-items: center;
+  display: grid;
+  place-content: center;
 }
 
-.container {
-    background-color: #1e1e1e; /* Dark container background color */
-    padding: 20px;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Light box shadow */
+.card {
+  flex-direction: column;
+  background: #1e1e1e;
+  border-radius: 10px;
+  height: fit-content;
+  width: 80vw;
+  max-width: 32rem;
+  margin: 1rem;
+  padding: 2rem;
+}
+
+h1 {
+    margin: 0;
+}
+
+input {
+  margin: 0.5rem 0;
+  width: 60vw;
+  max-width: 25rem;
 }
 
 button {
-    padding: 5px 10px;
-    background-color: #007acc; /* Button background color */
-    color: white; /* Button text color */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  padding: 5px 10px;
+  background-color: gray; /* Button background color */
+  color: white; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #005b9d; /* Button background color on hover */
+  background-color: #005b9d; /* Button background color on hover */
 }
 
 #result {
-    margin-top: 20px;
-    display: none; /* Initially hide the result section */
+  margin-top: 20px;
+  display: none; /* Initially hide the result section */
+}
+
+span {
+  font-weight: 700;
 }

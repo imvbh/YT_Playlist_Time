@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube Playlist Analyzer</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="container">
+    <div class="card">
         <h1>YouTube Playlist Analyzer</h1>
         <p>Enter the YouTube playlist URL:</p>
-        <input type="text" id="playlistUrl" placeholder="e.g., https://www.youtube.com/playlist?list=YOUR_PLAYLIST_ID">
-        <button onclick="analyzePlaylist()" id="analyzeButton">Analyze</button>
-        <div id="result">
-            <p class="font-bold">Playlist Name: <span id="playlistName"></span></p>
-            <p>Number of Videos: <span id="numVideos"></span></p>
-            <p>Average Length of Video: <span id="avgVideoLength"></span></p>
-            <p>Total Time: <span id="totalTime"></span></p>
-            <p>At 1.25x: <span id="time125x"></span></p>
-            <p>At 1.50x: <span id="time150x"></span></p>
-            <p>At 1.75x: <span id="time175x"></span></p>
-            <p>At 2.00x: <span id="time200x"></span></p>
-          </div>
-          
+        <div class="input">
+            <input type="text" id="playlistUrl" placeholder="https://www.youtube.com/playlist?list=YOUR_PLAYLIST_ID">
+            <button onclick="analyzePlaylist()" id="analyzeButton">Analyze</button>
+        </div>
     </div>
+    <div class="card" id="result">
+        <p>Playlist Name: <span id="playlistName"></span></p>
+        <p>Number of Videos: <span id="numVideos"></span></p>
+        <p>Average Length of Video: <span id="avgVideoLength"></span></p>
+        <p>Total Time: <span id="totalTime"></span></p>
+        <p>At 1.25x: <span id="time125x"></span></p>
+        <p>At 1.50x: <span id="time150x"></span></p>
+        <p>At 1.75x: <span id="time175x"></span></p>
+        <p>At 2.00x: <span id="time200x"></span></p>
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
