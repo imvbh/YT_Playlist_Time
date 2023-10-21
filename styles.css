@@ -181,7 +181,7 @@ button:hover {
   display:none; /*Initially hide the result section */
 }
 
-#result1 {
+.result {
   margin-top: 1rem;
   padding: 1rem 2rem;
   padding-bottom: 0.5rem; 
@@ -192,7 +192,7 @@ button:hover {
     color:#7b7b7b
 }
 
-.result1 p {
+.result p {
   font-weight: 700;
   color: #7d7d7d;
   margin-bottom: 1rem;
