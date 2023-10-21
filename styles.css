@@ -204,6 +204,10 @@ button {
   font-size: 0.8rem;
 }
 
+.result div{
+ margin-bottom: 2rem;
+}
+
 span {
   font-weight: 400;
   color: white;
