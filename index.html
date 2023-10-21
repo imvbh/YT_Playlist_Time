@@ -9,23 +9,35 @@
 </head>
 
 <body>
+    
     <div class="card">
         <h1>YouTube Playlist Analyzer</h1>
         <p>Enter the YouTube playlist URL:</p>
         <div class="input">
-            <input type="text" id="playlistUrl" placeholder="https://www.youtube.com/playlist?list=YOUR_PLAYLIST_ID">
+            <div class="textInputWrapper">
+                <input id="playlistUrl" onfocus="this.value=''" placeholder="youtube.com/playlist?list=ID" type="text" class="textInput">
+            </div>
+            <p class ="small">*works perfectly with playlists with less than 50 videos</p>
             <button onclick="analyzePlaylist()" id="analyzeButton">Analyze</button>
         </div>
     </div>
-    <div class="card" id="result">
+    <div class="card" id="result1">
+        
         <p>Playlist Name: <span id="playlistName"></span></p>
         <p>Number of Videos: <span id="numVideos"></span></p>
         <p>Average Length of Video: <span id="avgVideoLength"></span></p>
         <p>Total Time: <span id="totalTime"></span></p>
-        <p>At 1.25x: <span id="time125x"></span></p>
-        <p>At 1.50x: <span id="time150x"></span></p>
-        <p>At 1.75x: <span id="time175x"></span></p>
-        <p>At 2.00x: <span id="time200x"></span></p>
+        <p>Playback Speed: 
+            <span class="custom-select">
+            <select id="playbackSpeed">
+                <option value="1.25">1.25x</option>
+                <option value="1.5">1.5x</option>
+                <option value="1.75">1.75x</option>
+                <option value="2">2x</option>
+            </select></span>
+        </p>
+        <p>Adjusted Time: <span id="adjustedTime"></span></p>
+        <center><p class="small">made with ❤️ by <a href="https://imvbh.netlify.app">imvbh</a></p></center>
     </div>
 
     <script src="script.js"></script>

@@ -88,20 +88,17 @@ function analyzePlaylist() {
             "totalTime"
           ).textContent = `${totalHours} hours, ${totalMinutes} minutes, ${totalSeconds} seconds`;
 
-          // Calculate and display times at different playback speeds
-          const speed125 = totalTime / 1.25;
-          const speed150 = totalTime / 1.5;
-          const speed175 = totalTime / 1.75;
-          const speed200 = totalTime / 2;
-
-          document.getElementById("time125x").textContent =
-            formatTime(speed125);
-          document.getElementById("time150x").textContent =
-            formatTime(speed150);
-          document.getElementById("time175x").textContent =
-            formatTime(speed175);
-          document.getElementById("time200x").textContent =
-            formatTime(speed200);
+          // Get selected playback speed
+          const playbackSpeedSelect = document.getElementById("playbackSpeed");
+          const selectedSpeed = parseFloat(playbackSpeedSelect.value);
+          const adjustedTime = isNaN(selectedSpeed)
+            ? NaN
+            : totalTime / selectedSpeed;
+          document.getElementById("adjustedTime").textContent = isNaN(
+            adjustedTime
+          )
+            ? "Invalid playback speed"
+            : formatTime(adjustedTime);
         })
         .catch((videoError) => {
           console.error("Error fetching video details:", videoError);
@@ -109,9 +106,14 @@ function analyzePlaylist() {
     });
 
   // Show the result section
-  document.getElementById("playlistUrl").value = "";
-  document.getElementById("result").style.display = "block";
+  document.getElementById("result1").style.display = "block";
 }
+
+const playbackSpeedSelect = document.getElementById("playbackSpeed");
+playbackSpeedSelect.addEventListener("change", () => {
+  // Trigger the analyzePlaylist function when the dropdown changes
+  analyzePlaylist();
+});
 
 function formatTime(timeInSeconds) {
   const hours = Math.floor(timeInSeconds / 3600);
