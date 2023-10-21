@@ -179,8 +179,7 @@ button {
 }
 
 
-#result1{ 
-  margin-top:1rem;
+#result1{
   margin bottom: 3rem;
   display:none; /*Initially hide the result section */
 }
