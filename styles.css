@@ -221,11 +221,11 @@ margin:1rem;
 }
 
 /* unvisited link */
-a:link {
+footer a:link {
   color: white;
 }
 
 /* visited link */
-a:visited {
+footer a:visited {
   color: blue;
 }
