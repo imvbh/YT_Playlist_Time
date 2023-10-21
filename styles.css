@@ -45,7 +45,6 @@ body {
   width: 70vw;
   max-width: 32rem;
   margin-top: 2rem;
-  margin-bottom: 2rem;
   padding: 2rem;
 }
 
@@ -181,6 +180,8 @@ button {
 
 
 #result1{ 
+  margin-top:1rem;
+  margin bottom: 3rem;
   display:none; /*Initially hide the result section */
 }
 
