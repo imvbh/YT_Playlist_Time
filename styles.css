@@ -220,12 +220,18 @@ footer{
 margin:1rem;
 }
 
+footer a {
+text-decorations: none;
+}
+
 /* unvisited link */
 footer a:link {
   color: white;
 }
 
+
+
 /* visited link */
 footer a:visited {
-  color: white;
+  color: aqua;
 }
