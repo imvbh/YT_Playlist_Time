@@ -183,7 +183,7 @@ button:hover {
 
 .result {
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   padding: 1rem 2rem;
   padding-bottom: 0.5rem; 
   transition: display 0.5s linear;
