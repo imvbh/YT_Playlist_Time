@@ -219,3 +219,13 @@ span {
 footer{
 margin:1rem;
 }
+
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: blue;
+}
