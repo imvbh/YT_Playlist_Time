@@ -215,3 +215,7 @@ span {
   transition: display 0.5s linear;
   margin-bottom: 15rem;
 }
+
+footer{
+background-color:#1e1e1e;
+}
